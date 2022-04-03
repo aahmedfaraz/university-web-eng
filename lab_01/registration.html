@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <header>
+            <table width="100%">
+                <tr>
+                    <td>
+                        <img src="./assets/images/ahmedfaraz-icon.png" alt="logo">
+                    </td>
+                    <td>
+                        <table width="100%">
+                            <tr>
+                                <td><a href="./index.html">Home</a></td>
+                                <td><a href="./gallery.html">Gallery</a></td>
+                                <td><a href="./aboutus.html">About Us</a></td>
+                                <td><a href="./contactus.html">Contact Us</a></td>
+                                <td><a href="./registration.html">registration</a></td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </header>
+        <main>
+            <h1>Registration</h1>
+            <form action="post">
+                <table>
+                    <tr><td>
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Enter name here"/>
+                    </td></tr>
+                    <tr><td>
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Enter email here"/>
+                    </td></tr>
+                    <tr><td>
+                        <label for="phone">Phone</label>
+                        <input type="number" id="phone" name="phone" placeholder="Enter phone here"/>
+                    </td></tr>
+                    <tr><td>
+                        <label for="city">City</label>
+                        <select name="city" id="city">
+                            <option value="">Select Your City</option>
+                            <option value="karachi">Karachi</option>
+                            <option value="lahore">Lahore</option>
+                            <option value="islamabad">Islamabad</option>
+                        </select>
+                    </td></tr>
+                    <tr><td>
+                        <label for="gender">Gender</label>
+                        <input type="radio" name="gender" id="gender" value="male"> Male
+                        <input type="radio" name="gender" value="female"> Female
+                    </td></tr>
+                    <tr><td>
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" placeholder="Enter password here"/>
+                    </td></tr>
+                    <tr><td>
+                        <label for="password2">Confirm Password</label>
+                        <input type="password" id="password2" name="password2" placeholder="Enter password again"/>
+                    </td></tr>
+                    <tr>
+                        <td align="center">
+                            <input type="submit" value="Submit">
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </main>
+        <footer>
+            <p>All rights are reserved &reg;</p>
+        </footer>
+    </center>
+</body>
+</html>
