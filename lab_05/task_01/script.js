@@ -40,7 +40,6 @@ const deleteTask = (inputIndex) => {
 
 // Function 3 - Task Done
 const clicked = (inputIndex) => {
-  console.log("clicked");
   list = list.map((task, taskIndex) =>
     taskIndex == inputIndex ? { ...task, done: !task.done } : task
   );
