@@ -1,0 +1,127 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+    max-width: 100%;
+    padding: 10px;
+}
+
+h1, h2 {
+    color: rgb(88, 88, 88);
+}
+
+h2 {
+    padding: 10px;
+}
+
+main form {
+    width: 100%;
+    background-color: whitesmoke;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+main form .form-control {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+main form .form-control input {
+    padding: 5px;
+}
+
+main form > input {
+    cursor: pointer;
+    padding: 8px 40px;
+    border: 0;
+    background: linear-gradient(to bottom, dodgerblue, rgb(3, 105, 208));
+    color: white;
+    border-radius: 5px;
+}
+
+ul {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+ul li {
+    cursor: pointer;
+    width: 100%;
+    list-style-type: none;
+    background-color: rgb(226, 241, 255);
+    border: 1px solid dodgerblue;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+
+ul li.done {
+    background-color: rgb(214, 214, 214);
+    border-color: rgb(102, 102, 102);
+    color: rgb(106, 106, 106);
+    text-decoration: line-through;
+}
+
+ul li.done button {
+    background: linear-gradient(to bottom, gray, black) !important;
+}
+
+ul li:hover {
+    transform: scale(1.03);
+}
+
+ul li span:nth-of-type(2) {
+    font-size: 10px;
+}
+
+ul li span:nth-of-type(3) {
+    align-self: flex-end;
+}
+
+ul li span:nth-of-type(3) button {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: 0;
+    background: linear-gradient(to bottom, tomato, red);
+    color: white;
+    border-radius: 5px;
+}
+
+main form > input:active,
+ul li span:nth-of-type(3) button:active {
+    transform: scale(0.95);
+}
